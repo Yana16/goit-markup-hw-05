@@ -558,6 +558,11 @@ display: none;
     border-radius: 4px;
     cursor: pointer;
 }
+.menu-item:hover,
+.menu-item:focus {
+    box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
 
 .menu-item:hover .menu-item-overlay  {
 transform: translateY(0);
@@ -589,7 +594,13 @@ margin: 63px 24px;
 }
 
 .block-list {
-    padding: 20px 2px;
+    padding: 20px 24px;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .menu-title {
@@ -608,11 +619,8 @@ margin: 63px 24px;
     color: var(--txt-secondery);
 }
 
-.menu-link {
-    position: relative;
-    display: inline-block;
-    bottom: 0;
-}
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -622,6 +630,7 @@ margin: 63px 24px;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -653,6 +662,9 @@ margin: 63px 24px;
     border-style: none;
     outline-style: none;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 /* portfolio filter end */
 
