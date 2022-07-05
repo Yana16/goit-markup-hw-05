@@ -25,7 +25,8 @@
       <nav class="header-nav">
         <ul class="header-list canceled">
           <li class="header-item">
-            <a class="header-link canceled current" href="./index.html">Студия</a>
+            <a href="./index.html"  class="header-link canceled current">Студия
+            </a>
           </li>
           <li class="header-item">
             <a class="header-link canceled" href="./portfolio.html">Портфолио</a>
@@ -63,7 +64,16 @@
     <section class="order overlay">
       <div class="container">
         <h1 class="order-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="order-btn" type="button" name="order_item">Заказать услугу</button>
+        <button class="order-btn" type="button" name="order_item" data-modal-open>Заказать услугу</button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/icon.svg#icon-btn"></use>
+          </svg>
+          </button>
+        </div>
       </div>
     </section>
     <!-- section order end-->
@@ -130,12 +140,21 @@
         <ul class="skills-list card-set">
           <li class="skills-item card-set-item">
             <a class="skills-link" href=""><img src="./images/skills/1.jpg" alt="разработка" width="370" /></a>
+            <div class="skills-item-div">
+              <p class="skills-item-p">Десктопные приложения</p>
+            </div>
           </li>
           <li class="skills-item card-set-item">
             <a class="skills-link" href=""><img src="./images/skills/2.jpg" alt="интеграция" width="370" /></a>
+            <div class="skills-item-div">
+              <p class="skills-item-p">Мобильные приложения</p>
+            </div>
           </li>
           <li class="skills-item card-set-item">
             <a class="skills-link" href=""><img src="./images/skills/3.jpg" alt="дизайн" width="370" /></a>
+            <div class="skills-item-div">
+              <p class="skills-item-p">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -408,6 +427,9 @@
     </div>
   </footer>
   <!-- section footer end -->
+  <!-- modal skrypt start -->
+  <script src="./js/modal.js"></script>
+  <!-- modal skrypt end -->
 </body>
 
 </html>
