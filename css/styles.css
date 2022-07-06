@@ -177,6 +177,7 @@ span.logo-white {
 .mailto:hover,
 .mailto:focus {
     color: var(--txt-focus);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .i-email,
 .i-tel {
@@ -199,6 +200,7 @@ span.logo-white {
 .tel:hover,
 .tel:focus {
     color: var(--txt-focus);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section header end */
@@ -247,6 +249,7 @@ span.logo-white {
 .order-btn:hover,
 .order-btn:focus {
     background-color: var(--bg-hover-genbtn);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section order end */
@@ -327,9 +330,6 @@ span.logo-white {
     text-align: center;
     padding-bottom: 50px;
 }
-/* .skills-item {
-    margin-bottom: 82px;
-} */
 
 /* section skills end */
 
@@ -381,6 +381,7 @@ margin-left: 10px;
 .social-media-link:focus {
     background:var(--general-btn-cl);
     color: var(--txt-general-btn);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-icon {
     fill: currentColor;
@@ -428,6 +429,7 @@ margin-left: 10px;
 .customer-link:focus {
     border: 1px solid var(--general-btn-cl);
     color: var(--general-btn-cl);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -500,6 +502,7 @@ margin-left: 10px;
 .fsocial-link:focus {
     background-color: var(--general-btn-cl);
     color:var(--txt-general-btn);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fsocial-list:nth-child(n+2) {
     margin-left: 10px;
@@ -544,6 +547,7 @@ display: none;
 .filter-btn:focus {
     background-color: var(--general-btn-cl);
     color: var(--txt-general-btn);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current-btn {
     background-color: var(--general-btn-cl);
@@ -564,11 +568,14 @@ display: none;
 .menu-item:hover,
 .menu-item:focus {
     box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .menu-item:hover .menu-item-overlay  {
 transform: translateY(0);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .menu-item-div {
     position: relative;
@@ -639,11 +646,11 @@ img {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    /* visibility: hidden; */
 }
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
