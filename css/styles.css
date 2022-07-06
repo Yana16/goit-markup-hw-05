@@ -553,10 +553,13 @@ display: none;
     --item: ;
 }
 
+.menu-link {
+    cursor: pointer;
+    text-decoration: none;
+}
 .menu-item {
     outline: 1px solid var(--item-line);
     border-radius: 4px;
-    cursor: pointer;
 }
 .menu-item:hover,
 .menu-item:focus {
@@ -570,6 +573,7 @@ transform: translateY(0);
 .menu-item-div {
     position: relative;
     overflow: hidden;
+    
 }
 
 .menu-item-overlay {
@@ -580,7 +584,7 @@ transform: translateY(0);
     top: 0;
     left: 0;
     /* opacity: 0; */
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -597,7 +601,7 @@ margin: 63px 24px;
     padding: 20px 24px;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
